@@ -1,0 +1,304 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise 2 - 10 arrays with 10 objects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+         
+        .container{
+            width: 1903px !important;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exerices 2</h1>
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    <h3>PERSONS</h3>
+                    <table class="table table-striped">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th>
+                                    First Name
+                                    <button type="button" class="btn btn-light" onclick="sortPersonsName();"> Sort Names </button>
+                                </th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Height</th>
+                                <th>Weight</th>
+                                <th>Country</th>
+                                <th>Email</th>
+                                <th>Language</th>
+                            </tr>
+                        </thead>
+                        <tbody id="person">
+                                <!---->
+                        </tbody>
+                    </table>
+                    <hr>
+            </div>
+            <div class="col">
+                    <hr>
+                <h3>ANIMALS</h3>
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name
+                                <button type="button" class="btn btn-light" onclick="sortAnimalsName();">Sort Names</button>
+                            </th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>Color</th>
+                            <th>Species</th>
+                            <th>Weight</th>
+                            <th>Height</th>
+                            <th>Speed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="animal">
+                        <!---->
+                    </tbody>
+                </table>
+                <hr>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <hr>
+                        <h3>ELECTRONICS</h3>
+                        <table class="table table-striped">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th>Type
+                                        <button type="button" class="btn btn-light" onclick="sortElectronicsName();">Sort Names</button>
+                                    </th>
+                                    <th>Number</th>
+                                    <th>Brand</th>
+                                    <th>Year Made</th>
+                                    <th>Color</th>
+                                    <th>Size</th>
+                                    <th>Price$</th>
+                                    <th>Created By</th>
+                                </tr>
+                            </thead>
+                            <tbody id="electronic">
+                                    <!---->
+                            </tbody>
+                        </table>
+                        <hr>
+                </div>
+                <div class="col">
+                    <hr>
+                    <h3>CARS</h3>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Name
+                                    <button type="button" class="btn btn-light" onclick="sortCarsName();">Sort Names</button>
+                                </th>
+                                <th>Year Made</th>
+                                <th>Assembly</th>
+                                <th>Designer</th>
+                                <th>Color</th>
+                                <th>Motor</th>
+                                <th>Length</th>
+                                <th>Height</th>
+                                <th>Width</th>
+                            </tr>
+                        </thead>
+                            <tbody id="car">
+                            <!---->
+                        </tbody>
+                    </table>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <hr>
+                        <h3>PLANTS</h3>
+                        <table class="table table-striped">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th>Name
+                                        <button type="button" class="btn btn-light" onclick="sortPlantsName();">Sort Names</button>
+                                    </th>
+                                    <th>Family</th>
+                                    <th>Habitat</th>
+                                    <th>Color</th>
+                                    <th>Height</th>
+                                    <th>Scientific Name</th>
+                                </tr>
+                            </thead>
+                            <tbody id="plant">
+                                    <!---->
+                            </tbody>
+                        </table>
+                        <hr>
+                </div>
+                <div class="col">
+                    <hr>
+                    <h3>VEGETABLES</h3>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Name
+                                    <button type="button" class="btn btn-light" onclick="sortVegetablesName();">Sort Names</button>
+                                </th>
+                                <th>Energy</th>
+                                <th>Protein</th>
+                                <th>Vitamin C</th>
+                                <th>Potassium</th>
+                                <th>Family</th>
+                                <th>Color</th>
+                                <th>Grow</th>
+                            </tr>
+                        </thead>
+                            <tbody id="vegetable">
+                            <!---->
+                        </tbody>
+                    </table>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <hr>
+                        <h3>CUSTOMERS</h3>
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                  <tr>
+                                    <th>Name
+                                        <button type="button" class="btn btn-light" onclick="sortCustomersName();">Sort Names</button>
+                                    </th>
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                    <th>Career</th>
+                                    <th>Request</th>
+                                    <th>Offering $</th>
+                                    <th>Due Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="customer">
+                                    <!---->
+                            </tbody>
+                        </table>
+                    <hr>
+                </div>
+                <div class="col">
+                    <hr>
+                    <h3>STUDENTS</h3>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>First Name
+                                    <button type="button" class="btn btn-light" onclick="sortStudentsName();">Sort Names</button>
+                                </th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Grade</th>
+                                <th>Grade Average</th>
+                                <th>Strongest Class</th>
+                                <th>Weakest Class</th>
+                                <th>Born</th>
+                            </tr>
+                        </thead>
+                            <tbody id="student">
+                            <!---->
+                        </tbody>
+                    </table>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <hr>
+                        <h3>TEACHERS</h3>
+                        <table class="table table-striped">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th>Name
+                                        <button type="button" class="btn btn-light" onclick="sortTeachersName();">Sort Names</button>
+                                    </th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                    <th>Phone #</th>
+                                    <th>Years Teaching</th>
+                                    <th>Subject</th>
+                                    <th>Salary</th>
+                                    <th>School location</th>
+                                </tr>
+                            </thead>
+                            <tbody id="teacher">
+                                    <!---->
+                            </tbody>
+                        </table>
+                    <hr>
+                </div>
+                <div class="col">
+                    <hr>
+                    <h3>COMPUTERS</h3>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Brand
+                                    <button type="button" class="btn btn-light" onclick="sortComputersName();">Sort Names</button>
+                                </th>
+                                <th>Color</th>
+                                <th>Year</th>
+                                <th>Type</th>
+                                <th>Ram</th>
+                                <th>Performance</th>
+                                <th>Touch Screen</th>
+                                <th>Voice Activator</th>
+                                <th>Face Login</th>
+                            </tr>
+                        </thead>
+                            <tbody id="computer">
+                            <!---->
+                        </tbody>   
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <br/>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+<!--Add bootstrap
+-->
